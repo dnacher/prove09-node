@@ -36,10 +36,10 @@ function calculateRate (request, response) {
 	var mailType = requestUrl.query.mailType;
 	var weight = Number(requestUrl.query.weight);	
 
-	computeRate(response, mailType, weight);
+	//computeRate(response, mailType, weight);
 }
 
- function computeRate(response, mailType, weight) {        
+ /*function computeRate(response, mailType, weight) {        
         var result = 0;
 
         if (mailType === "Letters (Stamped)") {
