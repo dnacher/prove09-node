@@ -17,9 +17,8 @@ app.get('/index', (req, res) => res.send('<h1>Hello World</h1>'));
 app.listen(app.get('port'), () => console.log(`Example app listening on port ${port}!`));
 
 
-app.get('/rate', function(request, response) {
-	//calculateRate(request, response);
-	console.log('call calculateRate');
+app.get('/rate', function(request, response) {	
+	calculateRate(request, response);
 });
 
 
