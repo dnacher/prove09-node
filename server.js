@@ -1,10 +1,7 @@
-var express = require('express');
-var app = express();
-var url = require('url');
+const express = require('express')
+const app = express()
+const port = 5000
 
-app.set('port', (process.env.PORT || 5000));
+app.get('/', (req, res) => res.send('<h1>Hello World</h1>'))
 
-
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
